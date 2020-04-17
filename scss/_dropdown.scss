@@ -1,0 +1,17 @@
+.dropdown-menu {
+  border: none;
+}
+
+@media (min-width: 992px)  {
+  .dropdown-menu {
+    background-color: rgba(0,0,0,0.2);
+  }
+
+  .dropdown-item {
+    color: $white;
+    @include hover-focus {
+      color: $white;
+      background-color: darken(rgba(0,0,0,0.2), 5%);
+    }
+  }
+}
